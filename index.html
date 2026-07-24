@@ -7,12 +7,526 @@
     <title>cjrosales-portfolio</title>
   </head>
   <body>
-    <div class="headerName">
-      <h1>Hexagons</h1>
-      <div id="gradient"></div>
-      <div id="pattern"></div>
+    <nav
+      class="fixed left-3 md:left-6 top-1/2 -translate-y-1/2 z-50 hidden md:flex"
+    >
+      <div
+        class="flex flex-col gap-2 rounded-[28px] bg-[#0C1403]/95 border border-[#1f2b0f] p-3 shadow-2xl backdrop-blur-md"
+      >
+        <a href="#home" class="nav-item active" title="Home">
+          <img src="/icons/home.svg" class="w-6 h-6" />
+        </a>
+
+        <a href="#about" class="nav-item" title="About">
+          <img src="/icons/user.svg" class="w-6 h-6" />
+        </a>
+
+        <a href="#experience" class="nav-item" title="Experience">
+          <img src="/icons/briefcase.svg" class="w-6 h-6" />
+        </a>
+
+        <a href="#skills" class="nav-item" title="Skills">
+          <img src="/icons/code.svg" class="w-6 h-6" />
+        </a>
+
+        <a href="#featured_projects" class="nav-item" title="Projects">
+          <img src="/icons/layout.svg" class="w-6 h-6" />
+        </a>
+
+        <a href="#education" class="nav-item" title="Education">
+          <img src="/icons/graduation.svg" class="w-6 h-6" />
+        </a>
+
+        <a href="#contact" class="nav-item" title="Contact">
+          <img src="/icons/mail.svg" class="w-6 h-6" />
+        </a>
+      </div>
+    </nav>
+    <section id="home">
+      <div class="headerName cursor-none">
+        <div
+          class="w-full h-full relative justify-center gap-8 items-center flex flex-col md:flex-row z-[2] px-6 md:px-12"
+        >
+          <div class="w-[250px] h-[250px] md:w-[350px] md:h-[350px]">
+            <img
+              src="/profile.jpg"
+              class="w-full h-full object-cover object-[50%_20%] shrink-0 rounded-full"
+            />
+          </div>
+
+          <div class="w-full max-w-[600px] md:ml-15 flex flex-col">
+            <span
+              class="self-start bg-[#0C1403] text-[#7ECC01] border border-[#192903] rounded-2xl px-[10px]"
+            >
+              Hey, I'm
+            </span>
+
+            <span
+              class="font-extrabold text-4xl sm:text-5xl md:text-6xl pt-5 pb-5 text-white"
+            >
+              CJ Nicko Rosales
+            </span>
+
+            <span
+              class="font-bold text-[#7ECC01] text-xl sm:text-2xl md:text-3xl pb-6 md:pb-[30px]"
+            >
+              Data Engineer | Fullstack Software Developer | Microsoft Student
+              Ambassador
+            </span>
+
+            <span class="text-gray-300 text-base md:text-lg">
+              Building scalable, production-grade web applications — from
+              pixel-perfect interfaces to robust backend systems and server
+              deployments.
+            </span>
+          </div>
+          <!-- TODO: add resume download -->
+        </div>
+        <div id="gradient"></div>
+        <div id="pattern"></div>
+      </div>
+    </section>
+    <section id="about">
+      <div
+        class="bg-[#131217] w-full min-h-screen flex flex-col px-6 py-10 md:px-10"
+      >
+        <span
+          class="text-[#AFEC32] text-3xl sm:text-4xl md:text-5xl font-extrabold self-center pb-10"
+        >
+          ABOUT ME
+        </span>
+
+        <div
+          class="flex flex-col-reverse md:flex-row justify-center items-center gap-10"
+        >
+          <div
+            class="text-gray-300 w-full max-w-[500px] bg-[#0C1403] border-2 border-[#131a15] p-6 md:p-10 rounded-3xl"
+          >
+            <p>
+              A dedicated and results-driven Computer Science student with a
+              strong foundation in programming and problem-solving. Proven
+              ability to overcome challenges and deliver consistent results
+              through academic projects and organizational involvement.
+            </p>
+
+            <br />
+
+            <p>
+              Experienced in leadership, teamwork, and event coordination, with
+              a track record of taking responsibility and contributing
+              effectively in collaborative environments. Demonstrates strong
+              analytical thinking and adaptability in fast-paced settings.
+              Passionate about building clean, efficient, and secure software,
+              with a growing interest in data engineering and software
+              development.
+            </p>
+
+            <br />
+
+            <p>
+              Eager to apply technical skills and continue developing expertise
+              in software and data-driven systems.
+            </p>
+          </div>
+
+          <div
+            class="w-[220px] h-[300px] sm:w-[260px] sm:h-[340px] md:w-[300px] md:h-[400px] rounded-3xl"
+          >
+            <img
+              src="/profile.jpg"
+              class="w-full h-full object-cover rounded-3xl"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="experience" class="flex flex-col items-center gap-8 bg-[#131217]">
+      <div class="flex flex-col items-center mb-16">
+        <span
+          class="text-[#AFEC32] text-3xl sm:text-4xl md:text-5xl font-extrabold"
+        >
+          WORK EXPERIENCE
+        </span>
+
+        <div class="w-24 h-[3px] bg-[#AFEC32] mt-4 rounded-full"></div>
+      </div>
     </div>
-    <div class="w-full h-250"></div>
+    <section id="skills">
+      <div class="bg-[#131217] w-full min-h-screen px-6 py-20">
+        <!-- Title -->
+        <div class="flex flex-col items-center mb-16">
+          <span
+            class="text-[#AFEC32] text-3xl sm:text-4xl md:text-5xl font-extrabold"
+          >
+            MY SKILLS
+          </span>
+
+          <div class="w-24 h-[3px] bg-[#AFEC32] mt-4 rounded-full"></div>
+        </div>
+
+        <!-- Cards -->
+        <div
+          id="skills-container"
+          class="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8"
+        ></div>
+      </div>
+    </section>
+    <section id="featured_projects">
+      <div
+        class="bg-[#131217] w-full py-20 px-6 transition-colors duration-500"
+      >
+        <div class="max-w-[1500px] mx-auto">
+          <!-- Section Heading -->
+          <div class="flex flex-col items-center mb-20">
+            <span
+              class="text-[#AFEC32] text-3xl sm:text-4xl md:text-5xl font-extrabold"
+            >
+              FEATURED PROJECTS
+            </span>
+
+            <div class="w-24 h-[3px] bg-[#AFEC32] mt-4 rounded-full"></div>
+          </div>
+
+          <!-- JS inserts cards here -->
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 gap-12"
+            id="projects"
+          ></div>
+        </div>
+      </div>
+    </section>
+    <section id="education">
+      <div class="bg-[#131217] w-full min-h-screen px-6 py-20">
+        <!-- Title -->
+        <div class="flex flex-col items-center mb-20">
+          <span
+            class="text-[#AFEC32] text-3xl sm:text-4xl md:text-5xl font-extrabold"
+          >
+            MY EDUCATION JOURNEY
+          </span>
+
+          <div class="w-24 h-[3px] bg-[#AFEC32] mt-4 rounded-full"></div>
+        </div>
+
+        <!-- Timeline -->
+        <div class="relative max-w-7xl mx-auto">
+          <!-- Vertical Line -->
+          <div
+            class="absolute left-5 md:left-1/2 md:-translate-x-1/2 top-0 bottom-0 w-[2px] bg-[#7ECC01]"
+          ></div>
+
+          <!-- ITEM 1 -->
+          <div class="relative flex md:justify-start mb-20">
+            <!-- Dot -->
+            <div
+              class="absolute left-5 md:left-1/2 md:-translate-x-1/2 w-5 h-5 rounded-full bg-[#AFEC32] border-4 border-[#131217] shadow-[0_0_18px_#AFEC32]"
+            ></div>
+
+            <div
+              class="ml-14 md:ml-0 md:w-[45%] bg-[#0C1403] border border-[#20252B] rounded-3xl p-8"
+            >
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-14 h-14 rounded-xl bg-gradient-to-br from-[#AFEC32] to-[#2A8FFF] flex items-center justify-center"
+                >
+                  🎓
+                </div>
+
+                <div>
+                  <p class="text-[#AFEC32] font-semibold">2024 - Present</p>
+
+                  <h3 class="text-white text-3xl font-bold">
+                    Bachelor of Science in Computer Science
+                  </h3>
+                </div>
+              </div>
+
+              <p class="italic text-gray-300 mt-6">De La Salle Lipa</p>
+
+              <span
+                class="inline-block mt-6 px-4 py-2 rounded-xl bg-[#18260A] border border-[#355200] text-[#AFEC32] text-sm font-semibold"
+              >
+                COLLEGE
+              </span>
+            </div>
+          </div>
+
+          <!-- ITEM 2 -->
+          <div class="relative flex md:justify-end mb-20">
+            <div
+              class="absolute left-5 md:left-1/2 md:-translate-x-1/2 w-5 h-5 rounded-full bg-[#AFEC32] border-4 border-[#131217] shadow-[0_0_18px_#AFEC32]"
+            ></div>
+
+            <div
+              class="ml-14 md:ml-0 md:w-[45%] bg-[#0C1403] border border-[#20252B] rounded-3xl p-8"
+            >
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-14 h-14 rounded-xl bg-gradient-to-br from-[#AFEC32] to-[#675CFF] flex items-center justify-center"
+                >
+                  🏫
+                </div>
+
+                <div>
+                  <p class="text-[#AFEC32] font-semibold">2022 - 2024</p>
+
+                  <h3 class="text-white text-3xl font-bold">
+                    Senior High School
+                  </h3>
+                </div>
+              </div>
+
+              <p class="italic text-gray-300 mt-6">
+                Holy Trinity School of Padre Garcia
+              </p>
+
+              <span
+                class="inline-block mt-6 px-4 py-2 rounded-xl bg-[#18260A] border border-[#355200] text-[#AFEC32] text-sm font-semibold"
+              >
+                STEM
+              </span>
+            </div>
+          </div>
+
+          <!-- ITEM 3 -->
+          <div class="relative flex md:justify-start">
+            <div
+              class="absolute left-5 md:left-1/2 md:-translate-x-1/2 w-5 h-5 rounded-full bg-[#AFEC32] border-4 border-[#131217] shadow-[0_0_18px_#AFEC32]"
+            ></div>
+
+            <div
+              class="ml-14 md:ml-0 md:w-[45%] bg-[#0C1403] border border-[#20252B] rounded-3xl p-8"
+            >
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-14 h-14 rounded-xl bg-gradient-to-br from-[#F7C46A] to-[#A45DFF] flex items-center justify-center"
+                >
+                  📖
+                </div>
+
+                <div>
+                  <p class="text-[#AFEC32] font-semibold">2018 - 2022</p>
+
+                  <h3 class="text-white text-3xl font-bold">
+                    Junior High School
+                  </h3>
+                </div>
+              </div>
+
+              <p class="italic text-gray-300 mt-6">
+                Holy Trinity School of Padre Garcia
+              </p>
+
+              <span
+                class="inline-block mt-6 px-4 py-2 rounded-xl bg-[#18260A] border border-[#355200] text-[#AFEC32] text-sm font-semibold"
+              >
+                BASIC EDUCATION
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="bg-[#131217] w-full min-h-screen px-6 py-20">
+        <!-- Title -->
+        <div class="flex flex-col items-center mb-16">
+          <span
+            class="text-[#AFEC32] text-3xl sm:text-4xl md:text-5xl font-extrabold"
+          >
+            CONTACT ME
+          </span>
+
+          <div class="w-20 h-[3px] bg-[#AFEC32] mt-4 rounded-full"></div>
+        </div>
+
+        <!-- Main -->
+        <div
+          class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
+        >
+          <!-- Left Side -->
+          <div class="flex flex-col items-center text-center">
+            <h2 class="text-white text-4xl font-bold mt-10 leading-tight">
+              Let's build something
+              <br />
+              <span class="text-[#AFEC32]">amazing</span> together
+            </h2>
+
+            <p class="text-gray-400 mt-6 max-w-md">
+              Whether you have a project idea, a job opportunity, or simply want
+              to say hello — my inbox is always open.
+            </p>
+
+            <p class="text-gray-500 text-sm mt-4">
+              ⚡ Typically responds within 24 hours
+            </p>
+
+            <!-- Socials -->
+            <div class="flex gap-4 mt-10">
+              <a
+                href="https://github.com/seejjaay"
+                class="w-14 h-14 rounded-xl bg-[#101606] border border-[#24330D] flex items-center justify-center hover:border-[#AFEC32] transition"
+              >
+                <img src="/github.png" class="w-6" />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/cj-nicko-rosales-a29527353/"
+                class="w-14 h-14 rounded-xl bg-[#101606] border border-[#24330D] flex items-center justify-center hover:border-[#AFEC32] transition"
+              >
+                <img src="/linkedin.png" class="w-6" />
+              </a>
+            </div>
+          </div>
+
+          <!-- Right -->
+          <div
+            class="rounded-3xl border border-[#355200] bg-[#0C1403] p-8 shadow-[0_0_120px_rgba(175,236,50,0.08)]"
+          >
+            <h2 class="text-4xl font-bold text-white">
+              Send a <span class="text-[#AFEC32]">Message</span>
+            </h2>
+
+            <p class="text-gray-500 mt-2">
+              Fill out the form below and I'll respond as soon as possible.
+            </p>
+
+            <form id="contact-form" class="flex flex-col gap-6 mt-8">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                class="bg-[#18260A] border border-[#24330D] rounded-xl px-5 py-4 text-white outline-none focus:border-[#AFEC32]"
+                required
+              />
+
+              <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                class="bg-[#18260A] border border-[#24330D] rounded-xl px-5 py-4 text-white outline-none focus:border-[#AFEC32]"
+                required
+              />
+
+              <textarea
+                rows="6"
+                name="message"
+                placeholder="Your Message"
+                class="bg-[#18260A] border border-[#24330D] rounded-xl px-5 py-4 text-white outline-none resize-none focus:border-[#AFEC32]"
+                required
+              ></textarea>
+
+              <button
+                type="submit"
+                class="rounded-full border border-[#AFEC32] text-[#AFEC32] py-4 font-semibold hover:bg-[#AFEC32] hover:text-black transition"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="max-w-6xl mx-auto mt-24">
+          <h3 class="text-white text-3xl font-bold text-center mb-12">
+            Reach Me Anytime
+          </h3>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+            <div class="flex flex-col items-center">
+              <div
+                class="w-14 h-14 rounded-full border border-[#AFEC32] flex items-center justify-center"
+              >
+                📞
+              </div>
+
+              <span class="text-[#AFEC32] mt-4"> +63 912 345 6789 </span>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div
+                class="w-14 h-14 rounded-full border border-[#AFEC32] flex items-center justify-center"
+              >
+                ✉️
+              </div>
+
+              <span class="text-[#AFEC32] mt-4 break-all">
+                cjnickorosales@email.com
+              </span>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div
+                class="w-14 h-14 rounded-full border border-[#AFEC32] flex items-center justify-center"
+              >
+                📍
+              </div>
+
+              <span class="text-[#AFEC32] mt-4"> Batangas, Philippines </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center text-gray-500 text-sm mt-20">
+          © 2026 CJ Nicko Rosales. All Rights Reserved.
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div
+      id="project-modal"
+      class="fixed inset-0 z-50 hidden items-center justify-center bg-black/70 backdrop-blur-sm p-6"
+    >
+      <div
+        class="relative w-full max-w-5xl rounded-[2rem] border border-[#29371A] bg-[#10140D] overflow-hidden"
+      >
+        <!-- Close -->
+        <button
+          id="close-modal"
+          class="absolute top-5 right-5 text-gray-400 hover:text-[#AFEC32] text-3xl"
+        >
+          &times;
+        </button>
+
+        <div class="grid md:grid-cols-2">
+          <!-- Image -->
+          <div class="bg-black">
+            <img id="modal-image" class="w-full h-full object-cover" />
+          </div>
+
+          <!-- Content -->
+          <div class="p-10">
+            <span class="text-[#AFEC32] uppercase tracking-[4px] text-sm">
+              Featured Project
+            </span>
+
+            <h2
+              id="modal-title"
+              class="text-white text-4xl font-bold mt-3"
+            ></h2>
+
+            <p id="modal-subtitle" class="text-gray-400 mt-2"></p>
+
+            <div class="h-px bg-[#29371A] my-8"></div>
+
+            <p class="text-[#AFEC32] font-semibold mb-4">Technologies</p>
+
+            <div id="modal-tech" class="flex flex-wrap gap-3"></div>
+
+            <div class="h-px bg-[#29371A] my-8"></div>
+
+            <p class="text-[#AFEC32] font-semibold mb-4">What I Worked On</p>
+
+            <ul
+              id="modal-description"
+              class="list-disc pl-5 text-gray-300 space-y-3 leading-7"
+            ></ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script type="module" src="/src/main.js"></script>
   </body>

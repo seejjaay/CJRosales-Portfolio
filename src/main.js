@@ -1,3 +1,8 @@
+import "../src/workExperience/workExperience.js";
+import "../src/skills/skills.js";
+import "../src/projects/projects.js";
+import { initializeInteractiveFeatures } from "./interactive.js";
+
 const patternElement = document.getElementById("pattern");
 
 if (!patternElement) {
@@ -67,3 +72,4 @@ const loop = () => {
 
 // Start the animation loop
 window.requestAnimationFrame(loop);
+initializeInteractiveFeatures();
